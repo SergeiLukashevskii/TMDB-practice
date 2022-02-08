@@ -1,0 +1,43 @@
+.poster {
+    width: 130px;
+    height: 190px;
+    min-width: 130px;
+    min-height: 190px;
+}
+
+.container {
+    margin-top: 100px;
+}
+
+
+.filmsContainer {
+    margin-top: 35px;
+    margin-left: 150px;
+
+
+}
+
+.filmContainer {
+
+    display: flex;
+    margin-top: 20px;
+
+}
+
+.titleContainer {
+
+    width: 100%;
+}
+
+.title {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    color: red;
+}
+
+.review {
+    margin-top: 40px;
+    margin-left: 15px;
+}
