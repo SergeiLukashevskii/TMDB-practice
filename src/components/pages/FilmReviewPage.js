@@ -1,4 +1,3 @@
-
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { getFilm } from "../../store/actionCreators/getFilm"
@@ -9,6 +8,8 @@ import { useParams } from 'react-router-dom';
 export default function PopularFilmPage() {
     const dispatch = useDispatch()
     const { id } = useParams()
+    const data = useSelector((state) => selectFilm(state, id))
+    const image = useSelector((state) => selectImage(state, id))
 
     useEffect(() => {
         dispatch(getFilm(id))
@@ -17,13 +18,8 @@ export default function PopularFilmPage() {
 
     }, [])
 
-
-    const data = useSelector((state) => selectFilm(state, id))
-    const image = useSelector((state) => selectImage(state, id))
-
     const qwe = image ? image.posters[0].file_path : "just image" /* /cgvpApTCyGsms9EMUQzx6xGTRDq.png */
     const qqqq = "https://image.tmdb.org/t/p/original" + qwe
-
 
     return (
         <div className="InfoContainer">
@@ -66,4 +62,3 @@ export default function PopularFilmPage() {
         </div>
     );
 }
-

@@ -8,13 +8,5 @@ export const getFilm = (id) => (dispatch) => {
       )
       .then((responce) => {
          dispatch(setFilm(responce.data))
-        
       })
 }
-
-
-
-
-
-
-  

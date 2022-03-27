@@ -1,6 +1,4 @@
-import React from 'react';
-
-function Discussions(props) {
+function Discussions() {
     return (
         <div  style={{minHeight:500}}>
             support

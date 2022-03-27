@@ -11,9 +11,7 @@ const testReducer = createSlice({
       token: {},
       findValue: "",
       foundFilm: {},
-  
    },
-
    reducers: {
       setPopular: (state, { payload }) => {
          state.popular = payload
@@ -39,9 +37,6 @@ const testReducer = createSlice({
       setFoundFilm: (state, { payload }) => {
          state.foundFilm = payload
       },
-    
-
-
    },
 })
 
@@ -54,7 +49,5 @@ export const selectFilm = (state, id) => state.testReducer.film[id]
 export const selectToken = (state) => state.testReducer.token
 export const selectFindValue = (state) => state.testReducer.findValue
 export const selectFoundFilm = (state) => state.testReducer.foundFilm
-
-
 
 export default testReducer.reducer

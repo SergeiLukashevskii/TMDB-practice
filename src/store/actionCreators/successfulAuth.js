@@ -1,6 +1,5 @@
 import axios from 'axios'
 import getUser from "./getUser"
-
 // http://localhost:3000/login?request_token=4bef194f0cdf7573052fd4b0585fa88faee43782&approved=true // 
 // 4// 
                         // берём токен // 
@@ -19,13 +18,6 @@ export const successfulAuth = (token) => (dispatch) => {
                 dispatch(getUser())
             }
         })
-
-
-
 }
 
 export default successfulAuth
-
-
-
-

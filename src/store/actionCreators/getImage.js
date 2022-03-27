@@ -8,13 +8,5 @@ export const getImage = (id) => (dispatch) => {
       )
       .then((responce) => {
          dispatch(setImage(responce.data))
-        
       })
 }
-
-
-
-
-
-
-  

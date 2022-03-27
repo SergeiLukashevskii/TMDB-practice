@@ -36,6 +36,7 @@ a {
   height: 28px;
   padding-left: 15px;
   padding-right: 15px;
+  
 
 }
 
@@ -518,4 +519,12 @@ h3 {
   width: 100%;
 
 
+}
+
+.headerUserLogoUnlogged {
+ color: red;
+}
+
+.headerUserLogoLogged{
+  color: green;
 }

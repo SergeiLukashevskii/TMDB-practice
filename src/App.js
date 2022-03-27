@@ -25,30 +25,21 @@ import SearchResultPage from './components/pages/SearchResultPage';
 import Profile from './components/Profile';
 import LoggedOrNo from './components/LoggedOrNo';
 
-
-
 function App(props) {
-
    const dispatch = useDispatch()
-
 
    useEffect(() => {
       dispatch(checkUserAuth())                // чекаем session_id , если есть - получаем User`a и пушим его в redux  //
    }, [])
-
 
    return (
       <div className='container' >
          <Router>
             <Header />
             <div className="bodyContainer">
-
                <Switch>
-
                   <Route exact path={"/"} component={MainPage} />
-
                   <Route path={`/movies/:id`} component={FilmReviewPage} />
-
                   <Route exact path={"/Expected"} component={Expected} />
                   <Route exact path={"/PopularFilms"} component={PopularFilms} />
                   <Route exact path={"/WatchNow"} component={WatchNow} />
@@ -61,18 +52,13 @@ function App(props) {
                   <Route exact path={"/Support"} component={Support} />
                   <Route exact path={"/login"} component={Login} />
                   <Route exact path={"/SearchResultPage"} component={SearchResultPage} />
-
                   <LoggedOrNo>
                      <Route exact path={"/profile"} component={Profile} />
                      <Route exact path={"/BestFilms"} component={BestFilms} />
                      <Route exact path={"/BestSerials"} component={BestSerials} />
                      <Route exact path={"/Discussions"} component={Discussions} />
                   </LoggedOrNo>
-
-
-
                </Switch >
-
             </div>
             <Footer />
          </Router>

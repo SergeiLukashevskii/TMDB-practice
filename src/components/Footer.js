@@ -33,7 +33,6 @@ function Footer(props) {
                 <div>API правила использования</div>
                 <div>Политика конфиденциальности</div>
             </div>
-
         </div>
     );
 }

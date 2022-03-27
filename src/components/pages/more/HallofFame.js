@@ -1,6 +1,4 @@
-import React from 'react';
-
-function HallofFame(props) {
+function HallofFame() {
     return (
         <div style={{minHeight:500}}>
             hall of Fame
