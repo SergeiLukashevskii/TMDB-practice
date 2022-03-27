@@ -13,8 +13,8 @@ export default function MainPage(props) {
 
     const setPoTvCategory = useCallback(() => setPopularCategory(POPULAR_MOVIES_CATEGORIES.POTV), [])
     const setVKinoCategory = useCallback(() => setPopularCategory(POPULAR_MOVIES_CATEGORIES.VKINO), [])
-    const poTvMovies =  useSelector((state) => selectPopular(state))
-    const vKinoMovies =  useSelector((state) => selectNowPlaying(state))
+    const poTvMovies =  useSelector((state) => selectNowPlaying(state))
+    const vKinoMovies =  useSelector((state) => selectPopular(state))
 
     useEffect(()=>{
     if ( popularCategory === POPULAR_MOVIES_CATEGORIES.POTV ){dispatch(getNowPlaying())}
@@ -22,6 +22,7 @@ export default function MainPage(props) {
 
     }
     ,[popularCategory])
+
     return (
         <div className="mainPageContainer">
             <div className="welcomeContainer">
