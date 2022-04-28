@@ -31,7 +31,7 @@ export default function MainPage(props) {
                         <h2>Добро пожаловать</h2>
                         <h3>Миллионы фильмов,сериалов и людей.Исследуйте сейчас</h3>
                     </div>
-                    <FindInput search="jews" />
+                    <FindInput  />
                 </div>
             </div>
             <div className="popular">
